@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        ". logo img"
+        ". info img";
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 150px 1fr 1fr;
+}
+
+.info {
+    grid-area: info;
+    max-width: 700px;
+    word-wrap: break-word;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.image {
+    grid-area: img;
+    padding: 10% 5%;
+}
+
+.logo-content {
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+
+    font-family: 'Bitter', serif;
+    font-size: 1.7rem;
+}
+
+.logo-content-image {
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+
+    background-color: #bfc4c5;
+}
+
+.image-content {
+    height: 700px;
+    width: 600px;
+
+    background-color: #bfc4c5;
+}
+
+h1 {
+    font-family: 'Bitter', serif;
+    font-size: 3.5rem;
+    color: #343434;
+}
+
+h4 {
+    font-family: "Roboto", serif;
+    font-size: 1.7rem;
+    color: #33b1ff;
+}
+
+h6 {
+    font-family: "Roboto Light", serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #343434;
+}
+
+span {
+    color: #33b1ff;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 50px;
+
+    color: white;
+    font-family: "Roboto", serif;
+    font-size: 1.5rem;
+
+    background-color: #33b1ff;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: #2795d9;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-areas:
+            ". logo ."
+            ". info ."
+            ". . ."
+            "img img img";
+        grid-template-rows: 100px 1fr 50px 1fr;
+        grid-template-columns: 40px 1fr 40px;
+    }
+
+    .logo-content {
+        margin-top: 2rem;
+
+        font-size: 1.7rem;
+    }
+
+    .logo-content-image {
+        height: 30px;
+        width: 30px;
+    }
+
+    .image, .image-content {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h4, h6 {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 10px 30px;
+        font-size: 1.2rem;
+    }
+
+}

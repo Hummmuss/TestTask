@@ -1,0 +1,65 @@
+/* Reset default margin for HTML and body */
+html, body {
+    margin: 0;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #eff8ff;
+}
+
+.girl {
+    text-align: center;
+
+    width: 80vw;
+    height: 40vw;
+
+    color: white;
+
+    background-color: #a7b8d2;
+}
+
+.speed-test {
+    text-align: center;
+    margin-top: 5%;
+
+    color: white;
+
+    width: 20vw;
+    height: 15vw;
+
+    background-color: #a23535;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .background {
+        padding: 40% 0 0 0;
+    }
+
+    .girl {
+        width: 90vw;
+        height: 45vw;
+    }
+
+    .speed-test {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        margin: 0;
+
+        width: 60vw;
+        height: 45vw;
+
+        background-color: #a23535;
+    }
+
+}
